@@ -41,6 +41,12 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    </script>
+
+       <!--******************** Dropifi widget ********************-->
+      <!-- start Dropifi --> <script type='text/javascript' src='https://s3.amazonaws.com/dropifi/js/widget/dropifi_widget.min.js'></script><script type='text/javascript'>document.renderDropifiWidget('446f24f7bebfb2c5ed8aaca29a5a25cd-1390862735582');</script> <!-- end Dropifi -->
+      
 
 </head>
 <body>
@@ -68,7 +74,7 @@
 			              			<li><a href="#" class="about">About</a></li>
 			              			<li><a href="#" class="bees">The Bees</a></li>
 									<li><a href="#" class="events">Events</a></li>
-									<li><a href="#" class="">Community</a></li>
+									<li><a href="https://mightybell.com/communities/stembees-hive">Community</a></li>
 									<li><a href="#" class="team">Team</a></li>
 									
 			            		</ul>
@@ -123,12 +129,10 @@
           <div class="row">
             <div class="span12">
               <ul class="icon">
-                <!--li><a href="#" target="_blank"><i class="icon-pinterest-circled"></i></a></li-->
                 <li><a href="https://www.facebook.com/stembees" target="_blank"><img src="img/facebook.png" alt="facebook" /></a></li>
                 <li><a href="https://plus.google.com/104009445858298587916" rel="publisher" target="_blank"><img src="img/gplus.png" alt="Google +" style="width: 45px; height: 45px;"/></a></li>
                 <li><a href="https://www.twitter.com/stembees" target="_blank"><img src="img/twitter.png" alt="twitter" /></a></li>
-                
-                <!--li><a href="#" target="_blank"><i class="icon-skype-circled"></i></a></li-->
+            
               </ul>
             </div>
           </div>
@@ -414,7 +418,7 @@
 				<!-- start:  Member -->
 				<div class="span4">
 					<div class="avatar">
-						<img class="img-circle" src="img/angela.jpg" alt="team member" id="angie" >
+						<img class="img-circle" src="img/angie.jpg" alt="team member" id="angie" >
 					</div>	
 					<div class="team-name">Angela</div>
 					<div class="position"> Civil Engineer</div>
@@ -578,92 +582,15 @@
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/isotope.js"></script>
 <script type="text/javascript" src="js/jquery.imagesloaded.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/flexslider.js"></script>
-<script type="text/javascript" src="js/carousel.js"></script>
-<script type="text/javascript" src="js/fancybox.js"></script>
-<script type="text/javascript" src="js/twitter.js"></script>
-<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-
-<script type="text/javascript" src="js/excanvas.js"></script>
 <script type="text/javascript" src="js/jquery.flot.min.js"></script>
 <script type="text/javascript" src="js/jquery.flot.pie.min.js"></script>
 <script type="text/javascript" src="js/jquery.flot.stack.js"></script>
 <script type="text/javascript" src="js/jquery.flot.resize.min.js"></script>
 
 <script defer="defer" src="js/custom.js"></script>
-<script type="text/javascript">	
-	$(function() {
-	
-		var Page = (function() {
 
-			var $navArrows = $( '#nav-arrows' ),
-				$nav = $( '#nav-dots > span' ),
-				slitslider = $( '#slider' ).slitslider( {
-					onBeforeChange : function( slide, pos ) {
-
-						$nav.removeClass( 'nav-dot-current' );
-						$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-					}
-				} ),
-
-				init = function() {
-
-					initEvents();
-					
-				},
-				initEvents = function() {
-
-					// add navigation events
-					$navArrows.children( ':last' ).on( 'click', function() {
-
-						slitslider.next();
-						return false;
-
-					} );
-
-					$navArrows.children( ':first' ).on( 'click', function() {
-						
-						slitslider.previous();
-						return false;
-
-					} );
-
-					$nav.each( function( i ) {
-					
-						$( this ).on( 'click', function( event ) {
-							
-							var $dot = $( this );
-							
-							if( !slitslider.isActive() ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$dot.addClass( 'nav-dot-current' );
-							
-							}
-							
-							slitslider.jump( i + 1 );
-							return false;
-						
-						} );
-						
-					} );
-
-				};
-
-				return { init : init };
-
-		})();
-
-		Page.init();
-	
-	});
-</script>
 <!-- end: Java Script -->
 
 </body>
